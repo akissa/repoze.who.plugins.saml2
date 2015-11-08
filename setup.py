@@ -5,7 +5,13 @@ from imp import load_source
 from setuptools import setup, find_packages
 
 
-TEST_REQUIRES = ['nose', 'coverage', 'mock']
+TEST_REQUIRES = [
+    'webob',
+    'repoze.who >= 1.0',
+    'nose',
+    'coverage',
+    'mock'
+]
 
 if sys.version_info < (2, 7):
     TEST_REQUIRES.append('unittest2')
@@ -45,11 +51,20 @@ def main():
         url="https://github.com/akissa/repoze.who.plugins.saml2",
         license="MPL 2.0",
         packages=find_packages(exclude=['tests']),
+        namespace_packages=[
+            'webob',
+            'repoze',
+            'repoze.who',
+            'repoze.who.plugins',
+        ],
         include_package_data=True,
         zip_safe=False,
         tests_require=TEST_REQUIRES,
         test_suite='nose.collector',
-        install_requires=[],
+        install_requires=[
+            'repoze.who >= 1.0',
+            'zope.interface'
+        ],
         classifiers=[
             'Development Status :: 1 - Planning',
             'Programming Language :: Python',
