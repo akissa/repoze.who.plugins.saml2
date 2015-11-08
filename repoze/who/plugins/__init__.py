@@ -10,13 +10,6 @@
 repoze.who.plugins.saml2: A SAML2 plugin for repoze.who
 Copyright (C) 2015 Andrew Colin Kissa <andrew@topdog.za.net>
 """
-# pylint: disable=invalid-name,bad-builtin
-version_info = (0, 0, 1)
-__author__ = "Andrew Colin Kissa"
-__copyright__ = u"© 2010-2015 Andrew Colin Kissa"
-__email__ = "andrew@topdog.za.net"
-__version__ = ".".join(map(str, version_info))
-
 try:
     __import__('pkg_resources').declare_namespace(__name__)
 except ImportError:
