@@ -52,7 +52,6 @@ def main():
         license="MPL 2.0",
         packages=find_packages(exclude=['tests']),
         namespace_packages=[
-            'webob',
             'repoze',
             'repoze.who',
             'repoze.who.plugins',
@@ -62,8 +61,9 @@ def main():
         tests_require=TEST_REQUIRES,
         test_suite='nose.collector',
         install_requires=[
+            'webob',
             'repoze.who >= 1.0',
-            'zope.interface'
+            'zope.interface',
         ],
         classifiers=[
             'Development Status :: 1 - Planning',
