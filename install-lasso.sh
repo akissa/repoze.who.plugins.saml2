@@ -10,3 +10,4 @@ baruwa_path=$(python -c "from distutils.sysconfig import get_python_lib; print g
 cp bindings/python/lasso.py ${baruwa_path}/
 cp bindings/python/.libs/_lasso.so ${baruwa_path}/
 cd -
+rm -rf lasso-2.5.0
