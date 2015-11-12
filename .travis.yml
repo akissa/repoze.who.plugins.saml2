@@ -17,7 +17,8 @@ notifications:
       - andrew@topdog.za.net
 before_install:
     - sudo apt-get update -qq
-    - sudo apt-get install autoconf automake autotools-dev libtool gtk-doc-tools zlib1g-dev libglib2.0-dev libssl-dev libxml2-dev libxmlsec1-dev python-dev python-setuptools curl
+    - sudo apt-get install autoconf automake autotools-dev libtool gtk-doc-tools zlib1g-dev libglib2.0-dev libssl-dev libxml2-dev libxmlsec1-dev python-dev python-setuptools python-six curl
+    - pip install six
     - ./install-lasso.sh
     - if [[ $TRAVIS_PYTHON_VERSION == '2.6' ]]; then pip install -r requirements/requirements26_dev.txt; fi
     - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then pip install -r requirements/requirements27_dev.txt; fi
