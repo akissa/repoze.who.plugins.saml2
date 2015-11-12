@@ -1,1 +1,3 @@
-
+webob
+repoze.who>=1.0,<=1.99
+zope.interface
