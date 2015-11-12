@@ -6,7 +6,6 @@ from setuptools import setup, find_packages
 
 
 TEST_REQUIRES = [
-    'lasso',
     'webob',
     'repoze.who>=1.0,<=1.99',
     'nose',
@@ -63,7 +62,6 @@ def main():
         test_suite='nose.collector',
         install_requires=[
             'webob',
-            'lasso',
             'repoze.who>=1.0,<=1.99',
             'zope.interface',
         ],
