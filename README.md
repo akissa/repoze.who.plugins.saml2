@@ -11,7 +11,7 @@ provider (IdP).
 
 [![Code Climate](https://codeclimate.com/github/akissa/repoze.who.plugins.saml2/badges/gpa.svg)](https://codeclimate.com/github/akissa/repoze.who.plugins.saml2)
 [![Build Status](https://travis-ci.org/akissa/repoze.who.plugins.saml2.svg?branch=master)](https://travis-ci.org/akissa/repoze.who.plugins.saml2)
-[![codecov.io](https://codecov.io/github/akissa/repoze.who.plugins.saml2/coverage.svg?branch=master)](https://codecov.io/github/akissa/repoze.who.plugins.saml2?branch=master)
+[![codecov](https://codecov.io/gh/akissa/repoze.who.plugins.saml2/branch/master/graph/badge.svg)](https://codecov.io/gh/akissa/repoze.who.plugins.saml2)
 [![MPLv2 License](https://img.shields.io/badge/license-MPLv2-blue.svg?style=flat-square)](https://www.mozilla.org/MPL/2.0/)
 
 ## Installation
